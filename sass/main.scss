@@ -1,0 +1,51 @@
+$primaryLogoColor: #2196F3;
+$headerLogoColor: #000;
+$footerLogoColor: #fff;
+$footerAddressColor: #FFFFFF;
+$footerContactColor: rgba(255, 255, 255, 0.6);
+$secondaryBgColor: #2F303A;
+$buttonActiveColor: #2196F3;
+$boxShadowColor: rgba(0, 0, 0, 0.15);
+$buttonSendHoverColor: #188CE8;
+$modalCommentText: rgba(117, 117, 117, 0.5);
+$modalInputBorder: rgba(33, 33, 33, 0.2);
+$timingFunction: cubic-bezier(0.4, 0, 0.2, 1);
+$modalBackdropBgColor: rgba(0, 0, 0, 0.2);
+$overlayBgColor: rgba(33, 150, 243, 0.9);
+$specificItemTitleBgColor: rgba(47, 48, 58, 0.8);
+$footerInputBorder: rgba(255, 255, 255, 0.3);
+$footerIconJoinBgColor: rgba(255, 255, 255, 0.1);
+$primaryIconColor: #AFB1B8;
+$workListBorder: #EEEEEE;
+$headerBottomBorder: #ECECEC;
+$sectionBgColor: #F5F4FA;
+$primaryBgColor: #FFFFFF;
+$secondaryTitleColor: #212121;
+$primaryTitleColor: #FFFFFF;
+$linkActiveColor: #2196F3;
+$primaryTextColor: #757575;
+$buttonActiveTextColor: #FFFFFF;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    background-color: $primaryBgColor;
+    color: $primaryTextColor;
+
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
