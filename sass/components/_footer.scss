@@ -1,0 +1,28 @@
+.footer {
+    background-color: $secondaryBgColor;
+    text-align: center;
+}
+
+.footer__address {
+    margin-top: 20px;
+    font-style: normal;
+
+    color: $footerAddressColor;
+}
+
+.footer__contact-list {
+    margin-top: 8px;
+}
+
+.footer__contact-list .item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.footer__contact {
+    margin-top: 9px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: $footerContactColor;
+}

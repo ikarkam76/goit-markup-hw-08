@@ -1,0 +1,29 @@
+
+.header {
+    width: 480px;
+    height: 60px;
+
+    background-color: $primaryBgColor;
+}
+
+
+.header__site-nav {
+    @media screen and (max-width: $tablet) {
+        display: none;
+    }
+}
+
+ .header__contact {
+     @media screen and (max-width: $tablet) {
+         display: none;
+     }
+ }
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    border-bottom: 1px solid $headerBottomBorder;
+}
