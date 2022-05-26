@@ -8,11 +8,13 @@ ul {
 }
 
 .section {
-    width: 480px;
+    max-width: 480px;
     padding-top: 60px;
     padding-bottom: 60px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .link {

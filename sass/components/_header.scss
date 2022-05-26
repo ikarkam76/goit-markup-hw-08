@@ -1,9 +1,19 @@
 
 .header {
-    width: 480px;
+    max-width: 480px;
     height: 60px;
+    margin-left: auto;
+    margin-right: auto;
 
     background-color: $primaryBgColor;
+}
+
+.header__nav {
+    width: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 

@@ -31,8 +31,8 @@
     top: 50%;
     left: 50%;
 
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     padding: 40px;
 
     background-color: $primaryBgColor;
@@ -46,7 +46,7 @@
 
 }
 
-.modal__close-button {
+.modal__close-modal {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -66,8 +66,8 @@
     transition: box-shadow border-color fill 250ms $timingFunction;
 }
 
-.modal__close-button:hover,
-.modal__close-button:focus {
+.modal__close-modal:hover,
+.modal__close-modal:focus {
     outline: none;
     border-color: $buttonActiveColor;
     box-shadow: 0px 4px 4px $boxShadowColor;
@@ -78,7 +78,7 @@
 .modal__title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     margin-bottom: 2px;
 
@@ -169,8 +169,8 @@
     justify-content: center;
     position: relative;
 
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     margin-top: 20px;
 
 
