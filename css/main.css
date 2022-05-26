@@ -88,122 +88,17 @@ ul {
   color: #212121;
 }
 
-.header {
-  max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
-  border-bottom: 1px solid #ECECEC;
-}
-
-@media screen and (max-width: 797px) {
-  .header__contact {
+@media screen and (min-width: 798px) {
+  .mobile-menu {
     display: none;
   }
-}
-
-.header__contact-mobile {
-  margin-top: 302px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-}
-
-.header__contact-mobile .link {
-  color: #757575;
-}
-
-.header__contact-mobile .link:hover, .header__contact-mobile .link:focus {
-  color: #2196F3;
-}
-
-.header__contact-mobile .contact__phone {
-  font-size: 34px;
-}
-
-.header__contact-mobile .contact__mail {
-  font-size: 24px;
-}
-
-.header__contact-mobile .item:not(:last-child) {
-  margin-bottom: 32px;
-}
-
-.header__icon-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 64px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
-}
-
-.header__icon-list .link {
-  color: #2196F3;
-}
-
-.header__icon-list .icon + .icon {
-  padding-left: 10px;
-  border-left: 1px solid rgba(33, 33, 33, 0.2);
-}
-
-.header__icon-list .icon:not(:last-child) {
-  padding-right: 10px;
-}
-
-.header__container {
-  position: relative;
-  height: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #FFFFFF;
-}
-
-.header__navigation {
-  background-color: #FFFFFF;
-  padding: 48px 40px;
-}
-
-@media screen and (max-width: 798px) {
-  .header__navigation {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    height: 796px;
-  }
-  .header__navigation.is-open {
-    display: block;
-  }
-}
-
-.header__site-nav .link {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: #212121;
-}
-
-.header__site-nav .link:hover, .header__site-nav .link:focus {
-  color: #2196F3;
-}
-
-.header__site-nav .item {
-  margin-bottom: 32px;
 }
 
 .menu-button {
   position: absolute;
   top: 10px;
   right: 15px;
-  z-index: 3;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -233,6 +128,116 @@ ul {
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.header__navigation {
+  background-color: #FFFFFF;
+  padding: 48px 40px;
+}
+
+@media screen and (max-width: 797px) {
+  .header__navigation {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 796px;
+  }
+  .header__navigation.is-open {
+    display: block;
+  }
+}
+
+.header__contact-mobile {
+  margin-top: 302px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.header__contact-mobile .link {
+  color: #757575;
+}
+
+.header__contact-mobile .link:hover, .header__contact-mobile .link:focus {
+  color: #2196F3;
+}
+
+.header__contact-mobile .contact__phone {
+  font-size: 34px;
+}
+
+.header__contact-mobile .contact__mail {
+  font-size: 24px;
+}
+
+.header__contact-mobile .item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.header__container {
+  position: relative;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFFFFF;
+}
+
+.header__icon-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 64px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+}
+
+.header__icon-list .link {
+  color: #2196F3;
+}
+
+.header__icon-list .icon + .icon {
+  padding-left: 10px;
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.header__icon-list .icon:not(:last-child) {
+  padding-right: 10px;
+}
+
+.header {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #ECECEC;
+}
+
+@media screen and (max-width: 797px) {
+  .header__contact {
+    display: none;
+  }
+}
+
+.header__site-nav .link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.header__site-nav .link:hover, .header__site-nav .link:focus {
+  color: #2196F3;
+}
+
+.header__site-nav .item {
+  margin-bottom: 32px;
 }
 
 .footer {
