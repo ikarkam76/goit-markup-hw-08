@@ -1,29 +1,37 @@
 .header {
+    display: flex;
+
     position: relative;
-    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
 
     border-bottom: 1px solid $headerBottomBorder;
 
     @media screen and (max-width: 767px) {
-           display: flex;
-           height: 60px;
+        max-width: 480px;
+        height: 60px;
         }
 
     @media screen and (min-width: 768px) {
-        display: flex;
-        max-width: 768px;
+        width: 768px;
         height: 80px;
+    }
+    @media screen and (min-width: 1200px) {
+        justify-content: center;
+        width: 1600px;
     }
 }
 
 .header__container {
     display: flex;
     align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
     @media screen and (min-width: 768px) {
-        max-width: 798px;
-        
+        width: 798px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
     }
 
 }

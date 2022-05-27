@@ -24,7 +24,16 @@ ul {
     }
 
     @media screen and (min-width: 1200px) {
-        width: 1200px;
+        width: 1600px;
+        padding-top: 94px;
+        padding-bottom: 94px;
+        text-align: center;
+        .container {
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 15px;
+        }
     }
 }
 

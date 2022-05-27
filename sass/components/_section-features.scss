@@ -23,6 +23,15 @@ astronaut {
 
 }
 
+.features {
+    margin: -15px;
+}
+
+.feature__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 @media screen  and (max-width: 767px) {
     .feature__item:not(:last-child) {
         margin-bottom: 30px;
@@ -30,15 +39,15 @@ astronaut {
 }
 
 @media screen and (min-width: 768px) {
-    .feature__list {
-        display: flex;
-        flex-wrap: wrap;
-        margin: -15px;
-
-    }
     .feature__item {
         margin: 15px;
         width: calc((100% - 60px) / 2);
 
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .feature__item{
+    width: calc((100% - 120px) / 4);
     }
 }

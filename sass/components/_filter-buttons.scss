@@ -1,21 +1,21 @@
-.container-portfolio {
-    margin-top: -5px;
-}
-
 .filter {
     display: flex;
     flex-wrap: wrap;
 
     @media screen and (max-width: 767px) {
         .filter__item {
-                margin-top: 5px;
-                margin-bottom: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
         }
     }
 
     @media screen and (min-width: 768px) {
         justify-content: center;
         margin-bottom: 30px;        
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
     }
 
     .filter__item:not(:last-child) {

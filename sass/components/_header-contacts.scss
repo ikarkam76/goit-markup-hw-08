@@ -32,4 +32,19 @@
         }
 
     }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        margin-left: 305px;
+
+        .link {
+            font-size: 14px;
+        }
+
+        .item:not(:last-child) {
+            margin-right: 30px;
+            margin-bottom: 0;
+        }
+
+    }
 }
