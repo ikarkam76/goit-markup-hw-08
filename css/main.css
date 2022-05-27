@@ -243,7 +243,16 @@ ul {
   .header__contact {
     margin-left: 84px;
   }
+  .header__contact .item:not(:last-child) {
+    margin-bottom: 10px;
+  }
   .header__contact .link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.14;
