@@ -26,3 +26,16 @@
 
     color: $footerContactColor;
 }
+
+@media screen and (min-width: 768px) {
+    .footer__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer__join-block {
+        margin-left: 165px;
+    } 
+    
+}

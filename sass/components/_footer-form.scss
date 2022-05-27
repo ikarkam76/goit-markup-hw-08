@@ -1,5 +1,9 @@
 .footer__form {
-    margin-top: 60px;
+    @media screen and (max-width: 1200px) {
+        
+        width: 450px;
+        margin-top: 60px;
+    }                  
 }
 
 .footer__form__label {

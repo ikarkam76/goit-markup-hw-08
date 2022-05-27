@@ -320,8 +320,27 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer__form {
-  margin-top: 60px;
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__join-block {
+    margin-left: 165px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer__form {
+    width: 450px;
+    margin-top: 60px;
+  }
 }
 
 .footer__form__label {
@@ -382,9 +401,14 @@ ul {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  margin-top: 60px;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__join-title {
+    margin-top: 60px;
+  }
 }
 
 .footer__join-icon {
