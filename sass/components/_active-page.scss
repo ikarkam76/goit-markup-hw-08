@@ -1,0 +1,19 @@
+.active-page {
+    position: relative;
+    color: $linkActiveColor;
+}
+
+.active-page::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+
+    background-color: currentColor;
+    border-radius: 2px;
+}

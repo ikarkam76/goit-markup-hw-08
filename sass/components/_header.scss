@@ -27,8 +27,8 @@
         }
     }
 
-    .item {
-        margin-bottom: 32px;
+    .item + .item{
+        margin-top: 32px;
     }
 
 }
