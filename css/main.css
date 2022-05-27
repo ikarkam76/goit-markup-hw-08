@@ -113,8 +113,8 @@ ul {
   color: #2196F3;
 }
 
-.header__site-nav .item + .item {
-  margin-top: 32px;
+.header__site-nav .item {
+  margin-bottom: 32px;
 }
 
 .active-page {
