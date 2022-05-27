@@ -1,0 +1,28 @@
+.header__contact {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-left: 84px;
+
+        .link {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+        
+            color: $primaryTextColor;
+
+            &:hover,
+            &:focus {
+                color: $linkActiveColor;
+            }
+        }
+
+        .contact__icon {
+            margin-right: 8px;
+        }
+
+    }
+}
