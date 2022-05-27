@@ -1,18 +1,5 @@
-.features {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 15px;
-    padding-right: 15px;
-
-}
-
-.feature__item:not(:last-child) {
-    margin-bottom: 30px;
-}
-
 .feature__title {
 text-transform: uppercase;
-
 margin-bottom: 10px;
 }
 
@@ -34,4 +21,24 @@ astronaut {
         background-position: center;
     }
 
+}
+
+@media screen  and (max-width: 767px) {
+    .feature__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .feature__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+
+    }
+    .feature__item {
+        margin: 15px;
+        width: calc((100% - 60px) / 2);
+
+    }
 }

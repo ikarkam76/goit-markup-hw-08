@@ -11,6 +11,7 @@
     // background-repeat: no-repeat;
     // background-size: cover;
     // background-position: center;
+
 }
 
 .hero__title {
@@ -43,10 +44,11 @@
     transition-property: background-color, color;
     transition-duration: 250ms;
     transition-timing-function: $timingFunction;
+
+    &:hover,
+    &:focus {
+        background-color: $buttonActiveColor;
+        color: $buttonActiveTextColor;
+    }
 }
 
-.hero__button:hover,
-.hero__button:focus {
-    background-color: $buttonActiveColor;
-    color: $buttonActiveTextColor;
-}
