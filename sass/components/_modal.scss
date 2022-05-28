@@ -13,6 +13,8 @@
     transition-property: opacity, visibility;
     transition-timing-function: $timingFunction;
     transition-duration: 250ms;
+
+    overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -33,7 +35,6 @@
     left: 50%;
 
     width: 450px;
-    height: 609px;
     padding: 40px;
 
     background-color: $primaryBgColor;
@@ -44,6 +45,10 @@
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: $timingFunction;
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+    }
 
 }
 
