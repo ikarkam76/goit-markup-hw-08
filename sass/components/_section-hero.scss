@@ -11,9 +11,12 @@
     background-position: center;
     
     background-image: $bgHeroGradient, url(../Images/bgimg-480.jpg);
+    
         @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
+        (-webkit-min-device-pixel-ratio: 2),
+        (-o-min-device-pixel-ratio: 2/1),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
             background-image: $bgHeroGradient, url(../Images/bgimg-480-2x.jpg);
         }
 
@@ -21,6 +24,8 @@
         background-image: $bgHeroGradient, url(../Images/bgimg-768.jpg);
         
             @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (-o-min-device-pixel-ratio: 2/1),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 background-image: $bgHeroGradient, url(../Images/bgimg-768-2x.jpg);
@@ -35,6 +40,8 @@
         background-image: $bgHeroGradient, url(../Images/bgimg-1600.jpg);
         
             @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (-o-min-device-pixel-ratio: 2/1),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 background-image: $bgHeroGradient, url(../Images/bgimg-1600-2x.jpg);
