@@ -45,7 +45,7 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .section {
-    max-width: 1600px;
+    width: 1600px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -75,7 +75,6 @@ ul {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 15px;
   }
 }
 
@@ -124,7 +123,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   margin-left: auto;
   margin-right: auto;
   border-bottom: 1px solid #ECECEC;
@@ -154,12 +152,14 @@ ul {
 }
 
 .header__container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -178,15 +178,13 @@ ul {
 
 @media screen and (max-width: 767px) {
   .header__navigation {
+    position: fixed;
     background-color: #FFFFFF;
     padding: 48px 40px;
-    display: block;
-    position: absolute;
     z-index: 3;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 796px;
+    width: 480px;
+    height: 100vh;
   }
   .header__navigation.is-open {
     display: none;
@@ -327,10 +325,11 @@ ul {
 }
 
 .menu-button {
-  position: absolute;
+  position: fixed;
   top: 10px;
-  right: 15px;
+  right: calc((100% - 480px)  / 2 + 15px);
   z-index: 5;
+  overflow-y: scroll;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -351,6 +350,12 @@ ul {
 
 .menu-button .icon-menu {
   display: none;
+}
+
+.menu-button.is-open {
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }
 
 .menu-button.is-open .icon-cross {
@@ -389,6 +394,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .footer__address {
     text-align: left;
+    width: 231px;
   }
 }
 
@@ -408,7 +414,19 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
+  .footer__join-block {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__join-block {
+    margin-left: 70px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -429,12 +447,9 @@ ul {
         -ms-flex-align: baseline;
             align-items: baseline;
   }
-  .footer__join-block {
-    margin-left: 70px;
-  }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .footer__form {
     margin-top: 60px;
   }
@@ -503,8 +518,6 @@ ul {
 @media screen and (min-width: 1200px) {
   .footer__form__input {
     width: 358px;
-    margin-top: 20px;
-    padding-left: 16px;
   }
 }
 
@@ -534,6 +547,13 @@ ul {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__form__button {
+    margin-left: 12px;
+    margin-right: 0;
+  }
+}
+
 .footer__form__send {
   fill: #FFFFFF;
   margin-left: 10px;
@@ -545,12 +565,6 @@ ul {
   line-height: 1.14;
   text-transform: uppercase;
   color: #FFFFFF;
-}
-
-@media screen and (max-width: 767px) {
-  .footer__join-title {
-    margin-top: 60px;
-  }
 }
 
 .footer__join-icon {
@@ -695,6 +709,13 @@ ul {
   color: #FFFFFF;
 }
 
+.mobile-menu {
+  position: fixed;
+  bottom: 48px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
@@ -702,7 +723,7 @@ ul {
 }
 
 .header__contact-mobile {
-  margin-top: 302px;
+  margin-top: auto;
   font-weight: 500;
   letter-spacing: 0.02em;
 }
@@ -1334,6 +1355,12 @@ ul {
   color: #757575;
 }
 
+@media screen and (max-width: 767px) {
+  .product {
+    margin-top: 40px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .product {
     display: -webkit-box;
@@ -1347,7 +1374,9 @@ ul {
 
 .product__item {
   width: 100%;
-  margin-right: 30px;
+}
+
+.product__item:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -1453,9 +1482,11 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
+  .filter {
+    margin-top: -15px;
+  }
   .filter .filter__item {
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 15px;
   }
 }
 

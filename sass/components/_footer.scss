@@ -23,6 +23,7 @@
 
     @media screen and (min-width: 1200px) {
         text-align: left;
+        width: 231px;
     }
 
 }
@@ -43,7 +44,18 @@
     color: $footerContactColor;
 }
 
-@media screen and (min-width: 768px) {
+
+.footer__join-block {
+    @media screen and (max-width: 767px) {
+        margin-top: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     .footer__container {
         display: flex;
         flex-wrap: wrap;
@@ -55,10 +67,6 @@
     .footer__container {
     display: flex;
     align-items: baseline;
-    }
-
-    .footer__join-block {
-        margin-left: 70px;
     }
 
 }

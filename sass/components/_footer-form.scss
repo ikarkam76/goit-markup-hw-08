@@ -1,5 +1,5 @@
 .footer__form {
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1199px) {
         margin-top: 60px;
     } 
 
@@ -50,8 +50,6 @@
 
     @media screen and (min-width: 1200px) {
         width: 358px;
-        margin-top: 20px;
-        padding-left: 16px;
     
     }
 }
@@ -79,6 +77,11 @@
     box-shadow: 0px 4px 4px $boxShadowColor;
     border: none;
     border-radius: 4px;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
+        margin-right: 0;
+    }
 
 }
 

@@ -1,16 +1,18 @@
 .header__navigation {
+    
     @media screen and (max-width: 767px) {
+        position: fixed;
         background-color: $primaryBgColor;
         padding: 48px 40px;
 
-        display: block;
-        position: absolute;
+        
         z-index: 3;
         top: 0;
-        left: 0;
-        width: 100%;
-        height: 796px;
+        // left: calc((100% - 480px) / 2);
+        width: 480px;
+        height: 100vh;
 
+        
         &.is-open {
             display: none;
         }
