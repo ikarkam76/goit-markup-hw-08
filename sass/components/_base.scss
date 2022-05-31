@@ -10,6 +10,18 @@ ul {
 .section {
     padding-top: 60px;
     padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.container {
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -24,18 +36,12 @@ ul {
     }
 
     @media screen and (min-width: 1200px) {
-        width: 1600px;
-        padding-top: 94px;
-        padding-bottom: 94px;
-        text-align: center;
-        .container {
-            width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 0 15px;
-        }
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 15px;
     }
-}
+    }
 
 .link {
     text-decoration: none;

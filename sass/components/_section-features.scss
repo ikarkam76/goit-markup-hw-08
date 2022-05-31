@@ -1,6 +1,9 @@
 .feature__title {
 text-transform: uppercase;
 margin-bottom: 10px;
+    @media screen and (min-width: 768px) {
+        text-align: start;
+    }
 }
 
 @each $feature in antenna,
@@ -23,13 +26,12 @@ astronaut {
 
 }
 
-.features {
-    margin: -15px;
-}
-
 .feature__list {
     display: flex;
     flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
+        margin: -15px;
+    }
 }
 
 @media screen  and (max-width: 767px) {
@@ -42,7 +44,7 @@ astronaut {
     .feature__item {
         margin: 15px;
         width: calc((100% - 60px) / 2);
-
+        text-align: start;
     }
 }
 
