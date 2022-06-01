@@ -29,8 +29,11 @@
 
 .product__item {
     width: 100%;
-    &:not(:last-child) {
-        margin-bottom: 30px;
+    
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
     }
     
     .img {

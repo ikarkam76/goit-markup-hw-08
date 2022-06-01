@@ -16,4 +16,17 @@
 
 .header__logo {
     color: $headerLogoColor;
+
+    @media screen and (max-width: 767px) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-right: 88px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+    }
 }
